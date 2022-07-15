@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     setIsloading (true);
     const fetchApi = async () => {
-      const url = `http://api.weatherapi.com/v1/forecast.json?key=232c4483a75b4b3ca5692328223105&q=${search}&aqi=yes&days=10`;
+      const url = `https://api.weatherapi.com/v1/forecast.json?key=232c4483a75b4b3ca5692328223105&q=${search}&aqi=yes&days=10`;
       const response = await fetch(url);
       const resJson = await response.json();
       console.log(resJson);
