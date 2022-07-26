@@ -10,4 +10,3 @@ An application where users can see any location of weather details.
 - Display all data such as temperature, humidity, wind, sunrise, sunset and more...
 - Displays hourly temperature in a beautiful chart format and completely responsive.
 - Switch between light/dark mode.
-
