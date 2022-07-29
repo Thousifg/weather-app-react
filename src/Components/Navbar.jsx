@@ -12,6 +12,7 @@ const Navbar = () => {
   let [isloading, setIsloading] = useState(true);
 
   useEffect(() => {
+    getlocation();
     setIsloading (true);
     const fetchApi = async () => {
       const url = `https://api.weatherapi.com/v1/forecast.json?key=232c4483a75b4b3ca5692328223105&q=${search}&aqi=yes&days=10`;
@@ -23,6 +24,14 @@ const Navbar = () => {
     fetchApi();
     setIsloading (false);
   }, [search]);
+  
+  const getlocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(currCityWeather);
+    } else {
+      console.log("Please allow the location")
+    }
+  };
 
   return (
     <>
