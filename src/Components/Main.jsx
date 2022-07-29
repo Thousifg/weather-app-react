@@ -1,6 +1,7 @@
 import React from "react";
 
 const Main = (props) => {
+
   return (
     <>
       <div className="flex flex-col lg:w-1/3 sm:w-full sm:max-h-96 lg:max-h-full relative text-white rounded-2xl overflow-hidden bg-zinc-900">
