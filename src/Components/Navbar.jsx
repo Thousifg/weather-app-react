@@ -24,6 +24,7 @@ const Navbar = () => {
     fetchApi();
     setIsloading (false);
   }, [search]);
+
   
   const getlocation = () => {
     if (navigator.geolocation) {
@@ -32,6 +33,7 @@ const Navbar = () => {
       console.log("Please allow the location")
     }
   };
+
 
   return (
     <>
